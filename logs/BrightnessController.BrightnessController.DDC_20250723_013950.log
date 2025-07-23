@@ -1,4 +1,0 @@
-2025-07-23 01:39:55,908 - BrightnessController.BrightnessController.DDC - INFO - setup_component_logger:58 - Logger initialized for component: BrightnessController.BrightnessController.DDC
-2025-07-23 01:39:55,910 - BrightnessController.BrightnessController.DDC - INFO - setup_component_logger:59 - Component log file: logs\BrightnessController.BrightnessController.DDC_20250723_013950.log
-2025-07-23 01:39:55,914 - BrightnessController.BrightnessController.DDC - INFO - __init__:133 - DDC Brightness Controller initialized
-2025-07-23 01:39:55,914 - BrightnessController.BrightnessController.DDC - WARNING - __init__:134 - DDC/CI implementation is placeholder - requires hardware-specific implementation
