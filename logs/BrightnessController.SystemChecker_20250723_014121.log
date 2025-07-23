@@ -1,0 +1,40 @@
+2025-07-23 01:41:21,624 - BrightnessController.SystemChecker - INFO - setup_component_logger:58 - Logger initialized for component: BrightnessController.SystemChecker
+2025-07-23 01:41:21,628 - BrightnessController.SystemChecker - INFO - setup_component_logger:59 - Component log file: logs\BrightnessController.SystemChecker_20250723_014121.log
+2025-07-23 01:41:21,629 - BrightnessController.SystemChecker - INFO - __init__:23 - SystemChecker initialized
+2025-07-23 01:41:21,629 - BrightnessController.SystemChecker - DEBUG - __init__:32 - System requirements: {'platform': 'win32', 'python_version': (3, 6), 'powershell': True, 'tkinter': True}
+2025-07-23 01:41:21,629 - BrightnessController.SystemChecker - INFO - check_all_requirements:197 - Starting comprehensive system requirements check
+2025-07-23 01:41:21,631 - BrightnessController.SystemChecker - DEBUG - check_all_requirements:210 - Running check: Platform
+2025-07-23 01:41:21,631 - BrightnessController.SystemChecker - DEBUG - check_platform:36 - Checking platform compatibility
+2025-07-23 01:41:21,631 - BrightnessController.SystemChecker - INFO - check_platform:48 - Platform check passed: win32
+2025-07-23 01:41:21,652 - BrightnessController.SystemChecker - DEBUG - check_all_requirements:210 - Running check: Python Version
+2025-07-23 01:41:21,652 - BrightnessController.SystemChecker - DEBUG - check_python_version:54 - Checking Python version
+2025-07-23 01:41:21,652 - BrightnessController.SystemChecker - INFO - check_python_version:69 - Python version check passed: 3.12
+2025-07-23 01:41:21,662 - BrightnessController.SystemChecker - DEBUG - check_all_requirements:210 - Running check: PowerShell
+2025-07-23 01:41:21,662 - BrightnessController.SystemChecker - DEBUG - check_powershell:75 - Checking PowerShell availability
+2025-07-23 01:41:21,662 - BrightnessController.SystemChecker - DEBUG - check_powershell:78 - Testing PowerShell with simple command
+2025-07-23 01:41:22,230 - BrightnessController.SystemChecker - DEBUG - check_powershell:86 - PowerShell test result: code=0, stdout='test', stderr=''
+2025-07-23 01:41:22,230 - BrightnessController.SystemChecker - INFO - check_powershell:92 - PowerShell check passed
+2025-07-23 01:41:22,238 - BrightnessController.SystemChecker - DEBUG - check_all_requirements:210 - Running check: Tkinter
+2025-07-23 01:41:22,238 - BrightnessController.SystemChecker - DEBUG - check_tkinter:114 - Checking Tkinter availability
+2025-07-23 01:41:22,396 - BrightnessController.SystemChecker - INFO - check_tkinter:124 - Tkinter check passed
+2025-07-23 01:41:22,417 - BrightnessController.SystemChecker - DEBUG - check_all_requirements:228 - Running optional checks
+2025-07-23 01:41:22,417 - BrightnessController.SystemChecker - DEBUG - check_wmi_support:138 - Checking WMI brightness support
+2025-07-23 01:41:22,417 - BrightnessController.SystemChecker - DEBUG - check_wmi_support:141 - Testing WMI brightness query
+2025-07-23 01:41:23,112 - BrightnessController.SystemChecker - DEBUG - check_wmi_support:147 - WMI test result: code=0, stdout='
+Count
+-----
+    1
+
+
+'
+2025-07-23 01:41:23,112 - BrightnessController.SystemChecker - INFO - check_wmi_support:152 - WMI brightness support detected
+2025-07-23 01:41:23,127 - BrightnessController.SystemChecker - INFO - check_all_requirements:239 - All required system checks passed!
+2025-07-23 01:41:23,127 - BrightnessController.SystemChecker - DEBUG - get_system_info:170 - Gathering system information
+2025-07-23 01:41:23,308 - BrightnessController.SystemChecker - INFO - get_system_info:187 - System info gathered: {'platform': 'win32', 'python_version': '3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21...', 'architecture': '64bit', 'machine': 'AMD64', 'processor': 'Intel64 Family 6 Model 142 Stepping 10, GenuineInt...', 'windows_version': '10.0.26100'}
+2025-07-23 01:41:23,309 - BrightnessController.SystemChecker - INFO - check_all_requirements:252 - System Information:
+2025-07-23 01:41:23,309 - BrightnessController.SystemChecker - INFO - check_all_requirements:254 -   platform: win32
+2025-07-23 01:41:23,311 - BrightnessController.SystemChecker - INFO - check_all_requirements:254 -   python_version: 3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]
+2025-07-23 01:41:23,311 - BrightnessController.SystemChecker - INFO - check_all_requirements:254 -   architecture: 64bit
+2025-07-23 01:41:23,311 - BrightnessController.SystemChecker - INFO - check_all_requirements:254 -   machine: AMD64
+2025-07-23 01:41:23,311 - BrightnessController.SystemChecker - INFO - check_all_requirements:254 -   processor: Intel64 Family 6 Model 142 Stepping 10, GenuineIntel
+2025-07-23 01:41:23,311 - BrightnessController.SystemChecker - INFO - check_all_requirements:254 -   windows_version: 10.0.26100

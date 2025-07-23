@@ -1,0 +1,57 @@
+2025-07-23 01:41:23,323 - BrightnessController.DisplayDetector - INFO - setup_component_logger:58 - Logger initialized for component: BrightnessController.DisplayDetector
+2025-07-23 01:41:23,325 - BrightnessController.DisplayDetector - INFO - setup_component_logger:59 - Component log file: logs\BrightnessController.DisplayDetector_20250723_014121.log
+2025-07-23 01:41:23,325 - BrightnessController.DisplayDetector - INFO - __init__:229 - Initializing DisplayDetector
+2025-07-23 01:41:23,325 - BrightnessController.DisplayDetector.WMI - INFO - setup_component_logger:58 - Logger initialized for component: BrightnessController.DisplayDetector.WMI
+2025-07-23 01:41:23,330 - BrightnessController.DisplayDetector.WMI - INFO - setup_component_logger:59 - Component log file: logs\BrightnessController.DisplayDetector.WMI_20250723_014121.log
+2025-07-23 01:41:23,332 - BrightnessController.DisplayDetector.WMI - DEBUG - __init__:43 - WMI Display Detector initialized
+2025-07-23 01:41:23,334 - BrightnessController.DisplayDetector.DDC - INFO - setup_component_logger:58 - Logger initialized for component: BrightnessController.DisplayDetector.DDC
+2025-07-23 01:41:23,334 - BrightnessController.DisplayDetector.DDC - INFO - setup_component_logger:59 - Component log file: logs\BrightnessController.DisplayDetector.DDC_20250723_014121.log
+2025-07-23 01:41:23,334 - BrightnessController.DisplayDetector.DDC - DEBUG - __init__:173 - DDC Display Detector initialized
+2025-07-23 01:41:23,338 - BrightnessController.DisplayDetector - INFO - detect_displays:241 - Starting comprehensive display detection
+2025-07-23 01:41:23,339 - BrightnessController.DisplayDetector - DEBUG - detect_displays:245 - Detecting WMI displays (laptop/internal)
+2025-07-23 01:41:23,340 - BrightnessController.DisplayDetector.WMI - INFO - detect_displays:47 - Starting WMI display detection
+2025-07-23 01:41:23,341 - BrightnessController.DisplayDetector.WMI - DEBUG - _detect_brightness_methods:67 - Detecting WMI brightness methods
+2025-07-23 01:41:23,341 - BrightnessController.DisplayDetector.WMI - DEBUG - _detect_brightness_methods:77 - Executing PowerShell command: powershell -Command Get-WmiObject -Namespace root/WMI -Class WmiMonitorBrightnessMethods | Select-Object InstanceName
+2025-07-23 01:41:24,236 - BrightnessController.DisplayDetector.WMI - DEBUG - _detect_brightness_methods:80 - PowerShell return code: 0
+2025-07-23 01:41:24,236 - BrightnessController.DisplayDetector.WMI - DEBUG - _detect_brightness_methods:81 - PowerShell stdout: 
+InstanceName                           
+------------                           
+DISPLAY\BOE06A7\4&263963b&0&UID265988_0
+
+
+
+2025-07-23 01:41:24,238 - BrightnessController.DisplayDetector.WMI - DEBUG - _detect_brightness_methods:82 - PowerShell stderr: 
+2025-07-23 01:41:24,238 - BrightnessController.DisplayDetector.WMI - DEBUG - _detect_brightness_methods:86 - Processing 3 output lines
+2025-07-23 01:41:24,238 - BrightnessController.DisplayDetector.WMI - DEBUG - _detect_brightness_methods:92 - Processing line 0: 'DISPLAY\BOE06A7\4&263963b&0&UID265988_0'
+2025-07-23 01:41:24,238 - BrightnessController.DisplayDetector.WMI - INFO - _detect_brightness_methods:102 - Added WMI brightness method display: Display(Laptop Display 1, internal, wmi)
+2025-07-23 01:41:24,240 - BrightnessController.DisplayDetector.WMI - DEBUG - _detect_brightness_methods:113 - WMI brightness methods detection complete: 1 displays
+2025-07-23 01:41:24,242 - BrightnessController.DisplayDetector.WMI - DEBUG - _detect_current_brightness:118 - Detecting WMI current brightness
+2025-07-23 01:41:24,242 - BrightnessController.DisplayDetector.WMI - DEBUG - _detect_current_brightness:128 - Executing PowerShell command: powershell -Command Get-WmiObject -Namespace root/WMI -Class WmiMonitorBrightness | Select-Object InstanceName, CurrentBrightness
+2025-07-23 01:41:25,082 - BrightnessController.DisplayDetector.WMI - DEBUG - _detect_current_brightness:131 - PowerShell return code: 0
+2025-07-23 01:41:25,082 - BrightnessController.DisplayDetector.WMI - DEBUG - _detect_current_brightness:132 - PowerShell stdout: 
+InstanceName                            CurrentBrightness
+------------                            -----------------
+DISPLAY\BOE06A7\4&263963b&0&UID265988_0                25
+
+
+
+2025-07-23 01:41:25,082 - BrightnessController.DisplayDetector.WMI - DEBUG - _detect_current_brightness:133 - PowerShell stderr: 
+2025-07-23 01:41:25,082 - BrightnessController.DisplayDetector.WMI - DEBUG - _detect_current_brightness:137 - Processing 3 output lines
+2025-07-23 01:41:25,088 - BrightnessController.DisplayDetector.WMI - DEBUG - _detect_current_brightness:143 - Processing line 0: 'DISPLAY\BOE06A7\4&263963b&0&UID265988_0                25'
+2025-07-23 01:41:25,088 - BrightnessController.DisplayDetector.WMI - INFO - _detect_current_brightness:153 - Added WMI current brightness display: Display(Laptop Display 1, internal, wmi)
+2025-07-23 01:41:25,089 - BrightnessController.DisplayDetector.WMI - DEBUG - _detect_current_brightness:164 - WMI current brightness detection complete: 1 displays
+2025-07-23 01:41:25,089 - BrightnessController.DisplayDetector.WMI - INFO - detect_displays:62 - WMI detection complete: 1 displays found
+2025-07-23 01:41:25,089 - BrightnessController.DisplayDetector - INFO - detect_displays:248 - Found 1 WMI displays
+2025-07-23 01:41:25,089 - BrightnessController.DisplayDetector - DEBUG - detect_displays:251 - Detecting DDC displays (external)
+2025-07-23 01:41:25,093 - BrightnessController.DisplayDetector.DDC - INFO - detect_displays:177 - Starting DDC display detection
+2025-07-23 01:41:25,095 - BrightnessController.DisplayDetector.DDC - DEBUG - detect_displays:200 - Setting up monitor enumeration callback
+2025-07-23 01:41:25,095 - BrightnessController.DisplayDetector.DDC - DEBUG - detect_displays:210 - Starting monitor enumeration
+2025-07-23 01:41:25,095 - BrightnessController.DisplayDetector.DDC - DEBUG - enum_display_proc:182 - Found monitor handle: 65537
+2025-07-23 01:41:25,097 - BrightnessController.DisplayDetector.DDC - INFO - enum_display_proc:193 - Added DDC display: Display(External Monitor 1, external, ddc)
+2025-07-23 01:41:25,098 - BrightnessController.DisplayDetector.DDC - DEBUG - detect_displays:212 - Monitor enumeration result: 1212946689
+2025-07-23 01:41:25,098 - BrightnessController.DisplayDetector.DDC - INFO - detect_displays:217 - DDC detection complete: 1 displays found
+2025-07-23 01:41:25,098 - BrightnessController.DisplayDetector - INFO - detect_displays:254 - Found 1 DDC displays
+2025-07-23 01:41:25,101 - BrightnessController.DisplayDetector - INFO - detect_displays:268 - Total displays detected: 2
+2025-07-23 01:41:25,101 - BrightnessController.DisplayDetector - INFO - detect_displays:270 - Display 0: Display(Laptop Display 1, internal, wmi)
+2025-07-23 01:41:25,101 - BrightnessController.DisplayDetector - INFO - detect_displays:270 - Display 1: Display(External Monitor 1, external, ddc)
+2025-07-23 01:41:25,101 - BrightnessController.DisplayDetector - INFO - __init__:237 - DisplayDetector initialized with 2 displays

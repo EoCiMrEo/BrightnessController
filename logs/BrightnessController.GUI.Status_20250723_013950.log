@@ -1,0 +1,19 @@
+2025-07-23 01:39:56,179 - BrightnessController.GUI.Status - INFO - setup_component_logger:58 - Logger initialized for component: BrightnessController.GUI.Status
+2025-07-23 01:39:56,181 - BrightnessController.GUI.Status - INFO - setup_component_logger:59 - Component log file: logs\BrightnessController.GUI.Status_20250723_013950.log
+2025-07-23 01:39:56,182 - BrightnessController.GUI.Status - DEBUG - __init__:63 - Status display initialized
+2025-07-23 01:39:56,214 - BrightnessController.GUI.Status - INFO - show_info:77 - Info: Selected: Laptop Display 1
+2025-07-23 01:39:57,274 - BrightnessController.GUI.Status - INFO - show_info:77 - Info: Current: 0%
+2025-07-23 01:40:05,096 - BrightnessController.GUI.Status - DEBUG - show_working:82 - Working: Updating brightness...
+2025-07-23 01:40:05,767 - BrightnessController.GUI.Status - INFO - show_success:67 - Success: Brightness updated
+2025-07-23 01:40:07,697 - BrightnessController.GUI.Status - DEBUG - show_working:82 - Working: Updating brightness...
+2025-07-23 01:40:08,491 - BrightnessController.GUI.Status - INFO - show_success:67 - Success: Brightness updated
+2025-07-23 01:40:10,016 - BrightnessController.GUI.Status - DEBUG - show_working:82 - Working: Updating brightness...
+2025-07-23 01:40:10,741 - BrightnessController.GUI.Status - INFO - show_success:67 - Success: Brightness updated
+2025-07-23 01:40:11,777 - BrightnessController.GUI.Status - DEBUG - show_working:82 - Working: Updating brightness...
+2025-07-23 01:40:12,490 - BrightnessController.GUI.Status - INFO - show_success:67 - Success: Brightness updated
+2025-07-23 01:40:13,982 - BrightnessController.GUI.Status - DEBUG - show_working:82 - Working: Updating brightness...
+2025-07-23 01:40:14,640 - BrightnessController.GUI.Status - INFO - show_success:67 - Success: Brightness updated
+2025-07-23 01:40:18,973 - BrightnessController.GUI.Status - DEBUG - show_working:82 - Working: Refreshing displays...
+2025-07-23 01:40:20,268 - BrightnessController.GUI.Status - INFO - show_info:77 - Info: Selected: Laptop Display 1
+2025-07-23 01:40:20,277 - BrightnessController.GUI.Status - INFO - show_success:67 - Success: Displays refreshed
+2025-07-23 01:40:20,898 - BrightnessController.GUI.Status - INFO - show_info:77 - Info: Current: 25%

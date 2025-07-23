@@ -1,0 +1,18 @@
+2025-07-23 01:39:50,773 - BrightnessController.Main - INFO - setup_component_logger:58 - Logger initialized for component: BrightnessController.Main
+2025-07-23 01:39:50,773 - BrightnessController.Main - INFO - setup_component_logger:59 - Component log file: logs\BrightnessController.Main_20250723_013950.log
+2025-07-23 01:39:50,773 - BrightnessController.Main - INFO - setup_logging:75 - Logging system initialized
+2025-07-23 01:39:50,773 - BrightnessController.Main - INFO - setup_logging:76 - Log directory: D:\School\ConfirmationProjects\BrightnessController\logs
+2025-07-23 01:39:50,773 - BrightnessController.Main - INFO - setup_logging:77 - Session ID: 20250723_013950
+2025-07-23 01:39:50,773 - BrightnessController.Main - INFO - main:33 - ================================================================================
+2025-07-23 01:39:50,782 - BrightnessController.Main - INFO - main:34 - UNIVERSAL BRIGHTNESS CONTROLLER APPLICATION STARTING
+2025-07-23 01:39:50,784 - BrightnessController.Main - INFO - main:35 - ================================================================================
+2025-07-23 01:39:50,784 - BrightnessController.Main - INFO - main:36 - Python version: 3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]
+2025-07-23 01:39:50,787 - BrightnessController.Main - INFO - main:37 - Platform: win32
+2025-07-23 01:39:50,787 - BrightnessController.Main - INFO - main:38 - Working directory: D:\School\ConfirmationProjects\BrightnessController
+2025-07-23 01:39:50,790 - BrightnessController.Main - INFO - main:42 - Checking system requirements...
+2025-07-23 01:39:54,170 - BrightnessController.Main - INFO - main:48 - Creating application components...
+2025-07-23 01:39:55,920 - BrightnessController.Main - INFO - main:56 - Starting GUI application...
+2025-07-23 01:39:56,221 - BrightnessController.Main - INFO - main:59 - Application ready, starting main loop
+2025-07-23 01:40:22,690 - BrightnessController.Main - INFO - main:62 - Application main loop ended normally
+2025-07-23 01:40:22,690 - BrightnessController.Main - INFO - main:70 - Application cleanup complete
+2025-07-23 01:40:22,690 - BrightnessController.Main - INFO - main:71 - ================================================================================

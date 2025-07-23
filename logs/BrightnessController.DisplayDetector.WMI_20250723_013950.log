@@ -1,0 +1,67 @@
+2025-07-23 01:39:54,190 - BrightnessController.DisplayDetector.WMI - INFO - setup_component_logger:58 - Logger initialized for component: BrightnessController.DisplayDetector.WMI
+2025-07-23 01:39:54,193 - BrightnessController.DisplayDetector.WMI - INFO - setup_component_logger:59 - Component log file: logs\BrightnessController.DisplayDetector.WMI_20250723_013950.log
+2025-07-23 01:39:54,195 - BrightnessController.DisplayDetector.WMI - DEBUG - __init__:43 - WMI Display Detector initialized
+2025-07-23 01:39:54,204 - BrightnessController.DisplayDetector.WMI - INFO - detect_displays:47 - Starting WMI display detection
+2025-07-23 01:39:54,204 - BrightnessController.DisplayDetector.WMI - DEBUG - _detect_brightness_methods:67 - Detecting WMI brightness methods
+2025-07-23 01:39:54,204 - BrightnessController.DisplayDetector.WMI - DEBUG - _detect_brightness_methods:77 - Executing PowerShell command: powershell -Command Get-WmiObject -Namespace root/WMI -Class WmiMonitorBrightnessMethods | Select-Object InstanceName
+2025-07-23 01:39:54,963 - BrightnessController.DisplayDetector.WMI - DEBUG - _detect_brightness_methods:80 - PowerShell return code: 0
+2025-07-23 01:39:54,963 - BrightnessController.DisplayDetector.WMI - DEBUG - _detect_brightness_methods:81 - PowerShell stdout: 
+InstanceName                           
+------------                           
+DISPLAY\BOE06A7\4&263963b&0&UID265988_0
+
+
+
+2025-07-23 01:39:54,963 - BrightnessController.DisplayDetector.WMI - DEBUG - _detect_brightness_methods:82 - PowerShell stderr: 
+2025-07-23 01:39:54,963 - BrightnessController.DisplayDetector.WMI - DEBUG - _detect_brightness_methods:86 - Processing 3 output lines
+2025-07-23 01:39:54,963 - BrightnessController.DisplayDetector.WMI - DEBUG - _detect_brightness_methods:92 - Processing line 0: 'DISPLAY\BOE06A7\4&263963b&0&UID265988_0'
+2025-07-23 01:39:54,970 - BrightnessController.DisplayDetector.WMI - INFO - _detect_brightness_methods:102 - Added WMI brightness method display: Display(Laptop Display 1, internal, wmi)
+2025-07-23 01:39:54,970 - BrightnessController.DisplayDetector.WMI - DEBUG - _detect_brightness_methods:113 - WMI brightness methods detection complete: 1 displays
+2025-07-23 01:39:54,970 - BrightnessController.DisplayDetector.WMI - DEBUG - _detect_current_brightness:118 - Detecting WMI current brightness
+2025-07-23 01:39:54,970 - BrightnessController.DisplayDetector.WMI - DEBUG - _detect_current_brightness:128 - Executing PowerShell command: powershell -Command Get-WmiObject -Namespace root/WMI -Class WmiMonitorBrightness | Select-Object InstanceName, CurrentBrightness
+2025-07-23 01:39:55,858 - BrightnessController.DisplayDetector.WMI - DEBUG - _detect_current_brightness:131 - PowerShell return code: 0
+2025-07-23 01:39:55,858 - BrightnessController.DisplayDetector.WMI - DEBUG - _detect_current_brightness:132 - PowerShell stdout: 
+InstanceName                            CurrentBrightness
+------------                            -----------------
+DISPLAY\BOE06A7\4&263963b&0&UID265988_0                 0
+
+
+
+2025-07-23 01:39:55,858 - BrightnessController.DisplayDetector.WMI - DEBUG - _detect_current_brightness:133 - PowerShell stderr: 
+2025-07-23 01:39:55,858 - BrightnessController.DisplayDetector.WMI - DEBUG - _detect_current_brightness:137 - Processing 3 output lines
+2025-07-23 01:39:55,858 - BrightnessController.DisplayDetector.WMI - DEBUG - _detect_current_brightness:143 - Processing line 0: 'DISPLAY\BOE06A7\4&263963b&0&UID265988_0                 0'
+2025-07-23 01:39:55,858 - BrightnessController.DisplayDetector.WMI - INFO - _detect_current_brightness:153 - Added WMI current brightness display: Display(Laptop Display 1, internal, wmi)
+2025-07-23 01:39:55,869 - BrightnessController.DisplayDetector.WMI - DEBUG - _detect_current_brightness:164 - WMI current brightness detection complete: 1 displays
+2025-07-23 01:39:55,871 - BrightnessController.DisplayDetector.WMI - INFO - detect_displays:62 - WMI detection complete: 1 displays found
+2025-07-23 01:40:18,973 - BrightnessController.DisplayDetector.WMI - INFO - detect_displays:47 - Starting WMI display detection
+2025-07-23 01:40:18,973 - BrightnessController.DisplayDetector.WMI - DEBUG - _detect_brightness_methods:67 - Detecting WMI brightness methods
+2025-07-23 01:40:18,973 - BrightnessController.DisplayDetector.WMI - DEBUG - _detect_brightness_methods:77 - Executing PowerShell command: powershell -Command Get-WmiObject -Namespace root/WMI -Class WmiMonitorBrightnessMethods | Select-Object InstanceName
+2025-07-23 01:40:19,665 - BrightnessController.DisplayDetector.WMI - DEBUG - _detect_brightness_methods:80 - PowerShell return code: 0
+2025-07-23 01:40:19,665 - BrightnessController.DisplayDetector.WMI - DEBUG - _detect_brightness_methods:81 - PowerShell stdout: 
+InstanceName                           
+------------                           
+DISPLAY\BOE06A7\4&263963b&0&UID265988_0
+
+
+
+2025-07-23 01:40:19,666 - BrightnessController.DisplayDetector.WMI - DEBUG - _detect_brightness_methods:82 - PowerShell stderr: 
+2025-07-23 01:40:19,666 - BrightnessController.DisplayDetector.WMI - DEBUG - _detect_brightness_methods:86 - Processing 3 output lines
+2025-07-23 01:40:19,666 - BrightnessController.DisplayDetector.WMI - DEBUG - _detect_brightness_methods:92 - Processing line 0: 'DISPLAY\BOE06A7\4&263963b&0&UID265988_0'
+2025-07-23 01:40:19,666 - BrightnessController.DisplayDetector.WMI - INFO - _detect_brightness_methods:102 - Added WMI brightness method display: Display(Laptop Display 1, internal, wmi)
+2025-07-23 01:40:19,666 - BrightnessController.DisplayDetector.WMI - DEBUG - _detect_brightness_methods:113 - WMI brightness methods detection complete: 1 displays
+2025-07-23 01:40:19,666 - BrightnessController.DisplayDetector.WMI - DEBUG - _detect_current_brightness:118 - Detecting WMI current brightness
+2025-07-23 01:40:19,666 - BrightnessController.DisplayDetector.WMI - DEBUG - _detect_current_brightness:128 - Executing PowerShell command: powershell -Command Get-WmiObject -Namespace root/WMI -Class WmiMonitorBrightness | Select-Object InstanceName, CurrentBrightness
+2025-07-23 01:40:20,248 - BrightnessController.DisplayDetector.WMI - DEBUG - _detect_current_brightness:131 - PowerShell return code: 0
+2025-07-23 01:40:20,248 - BrightnessController.DisplayDetector.WMI - DEBUG - _detect_current_brightness:132 - PowerShell stdout: 
+InstanceName                            CurrentBrightness
+------------                            -----------------
+DISPLAY\BOE06A7\4&263963b&0&UID265988_0                25
+
+
+
+2025-07-23 01:40:20,248 - BrightnessController.DisplayDetector.WMI - DEBUG - _detect_current_brightness:133 - PowerShell stderr: 
+2025-07-23 01:40:20,248 - BrightnessController.DisplayDetector.WMI - DEBUG - _detect_current_brightness:137 - Processing 3 output lines
+2025-07-23 01:40:20,248 - BrightnessController.DisplayDetector.WMI - DEBUG - _detect_current_brightness:143 - Processing line 0: 'DISPLAY\BOE06A7\4&263963b&0&UID265988_0                25'
+2025-07-23 01:40:20,248 - BrightnessController.DisplayDetector.WMI - INFO - _detect_current_brightness:153 - Added WMI current brightness display: Display(Laptop Display 1, internal, wmi)
+2025-07-23 01:40:20,248 - BrightnessController.DisplayDetector.WMI - DEBUG - _detect_current_brightness:164 - WMI current brightness detection complete: 1 displays
+2025-07-23 01:40:20,248 - BrightnessController.DisplayDetector.WMI - INFO - detect_displays:62 - WMI detection complete: 1 displays found
